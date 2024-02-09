@@ -1,0 +1,6 @@
+main.d
+Triangle.d
+triangles.exe
+obj/main.o
+obj/Triangle.o
+src/include/Triangle.exe
