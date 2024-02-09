@@ -2,7 +2,7 @@
 #include <cmath>
 #include <string>
 #include "include/Triangle.h"
-// dum
+
 using namespace std;
 
 int main(){
