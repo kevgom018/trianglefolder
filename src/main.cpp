@@ -7,10 +7,10 @@ using namespace std;
 
 int main(){
     Triangle t1(10, 10, 10);
-    double area1 = triangleArea(t1);
+    double area1 = t1.triangleArea();
     cout << "Area of t1: " << area1 << endl;
     Triangle t2(20, 20, 20);
-    double area2 = triangleArea(t2);
+    double area2 = t2.triangleArea();
     cout << "Area of t2: " << area2 << endl;
     if (largerThan(t1, t2)){
         cout << "First triangle is larger." << endl;

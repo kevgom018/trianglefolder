@@ -14,10 +14,11 @@ class Triangle{
             sides[1] = s2;
             sides[2] = s3;
         }
+        double triangleArea();
     };
 
 
-double triangleArea(Triangle t1);
+//double triangleArea(Triangle t1);
 
 bool largerThan(Triangle t1, Triangle t2);
 
