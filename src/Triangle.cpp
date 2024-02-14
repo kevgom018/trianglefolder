@@ -17,14 +17,9 @@ double Triangle::getArea(){
     double area = sqrt(s * (s - this->getSide1()) * (s - this->getSide2()) * (s - this->getSide3()));
     return area;
 }
-// double triangleArea(Triangle t1){
-//     double s = (t1.getSide1() + t1.getSide2() + t1.getSide3()) / 2;
-//     double area = sqrt(s * (s - t1.getSide1()) * (s - t1.getSide2()) * (s - t1.getSide3()));
-//     return area;
-// }
 
-bool largerThan(Triangle t1, Triangle t2) {
-    return (t1.getArea() > t2.getArea());
+bool Triangle::largerThan(Triangle t2) {
+    return (this->getArea() > t2.getArea());
 }
 
 double sumAreas(Triangle triangles[], int size){

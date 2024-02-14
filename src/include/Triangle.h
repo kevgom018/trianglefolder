@@ -15,12 +15,11 @@ class Triangle{
             sides[2] = s3;
         }
         double getArea();
+        bool largerThan(Triangle t2);
     };
 
 
-//double triangleArea(Triangle t1);
 
-bool largerThan(Triangle t1, Triangle t2);
 
 double sumAreas(Triangle triangles[], int size);
 

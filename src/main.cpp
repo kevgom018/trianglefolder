@@ -12,7 +12,7 @@ int main(){
     Triangle t2(20, 20, 20);
     double area2 = t2.getArea();
     cout << "Area of t2: " << area2 << endl;
-    if (largerThan(t1, t2)){
+    if (t1.largerThan(t2)){
         cout << "First triangle is larger." << endl;
     } else {
         cout << "First triangle is NOT larger." << endl;
