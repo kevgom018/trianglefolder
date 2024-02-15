@@ -16,11 +16,9 @@ class Triangle{
         }
         double getArea();
         bool largerThan(Triangle t2);
+        static double sumAreas(Triangle triangles[], int size);
+        static Triangle findLargest(Triangle triangles[], int size);
     };
 
 
 
-
-double sumAreas(Triangle triangles[], int size);
-
-Triangle findLargest(Triangle triangles[], int size);

@@ -22,7 +22,7 @@ bool Triangle::largerThan(Triangle t2) {
     return (this->getArea() > t2.getArea());
 }
 
-double sumAreas(Triangle triangles[], int size){
+double Triangle::sumAreas(Triangle triangles[], int size){
     double result = 0.0;
     for (int i = 0; i < size; i++){
         result += triangles[i].getArea();
@@ -30,7 +30,7 @@ double sumAreas(Triangle triangles[], int size){
     return result;
 }
 
-Triangle findLargest(Triangle triangles[], int size){
+Triangle Triangle::findLargest(Triangle triangles[], int size){
     Triangle largestTriangle = triangles[0];
     for (int i = 1; i < size; i++){
         if (triangles[i].getArea() > largestTriangle.getArea()){
