@@ -1,4 +1,5 @@
 #include <cmath>
+#include <string>
 
 class Triangle{
     private:
@@ -18,6 +19,7 @@ class Triangle{
         bool largerThan(Triangle t2);
         static double sumAreas(Triangle triangles[], int size);
         static Triangle findLargest(Triangle triangles[], int size);
+        std::string triangleType();
     };
 
 

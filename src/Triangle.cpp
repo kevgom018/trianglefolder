@@ -1,16 +1,17 @@
 #include <cmath>
+#include <string>
 #include "include/Triangle.h"
 
 
-// string triangleType(Triangle t1){
-//     if (t1.side1 == t1.side2 && t1.side2 == t1.side3){
-//         return "EQUILATERAL";
-//     } else if (t1.side1 == t1.side2 ^ t1.side2 == t1.side3 ^ t1.side1 == t1.side3){
-//         return "ISCOCELES";
-//     } else if (t1.side1 != t1.side2 && t1.side2 != t1.side3 && t1.side1 != t1.side3){
-//         return "SCALENE";
-//     }
-// }
+std::string Triangle::triangleType(){
+    if (this->getSide1() == this->getSide2() && this->getSide2() == this->getSide3()){
+        return "EQUILATERAL";
+    } else if (this->getSide1() == this->getSide2() ^ this->getSide2() == this->getSide3() ^ this->getSide1() == this->getSide3()){
+        return "ISCOCELES";
+    } else if (this->getSide1() != this->getSide2() && this->getSide2() != this->getSide3() && this->getSide1() != this->getSide3()){
+        return "SCALENE";
+    }
+}
 
 double Triangle::getArea(){
     double s = (this->getSide1() + this->getSide2() + this->getSide3()) / 2;
